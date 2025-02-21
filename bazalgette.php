@@ -32,8 +32,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// Define global to hold the plugin base file name.
+// Define globals for plugin version, debug mode and base file name.
 
+if ( ! defined( 'BAZALGETTE_VERSION' ) ) {
+	define( 'BAZALGETTE_VERSION', '1.0' );
+}
+if ( ! defined( 'BAZALGETTE_DEBUG' ) ) {
+	define( 'BAZALGETTE_DEBUG', true );
+}
 if ( ! defined( 'BAZALGETTE_PLUGIN_BASE' ) ) {
 	define( 'BAZALGETTE_PLUGIN_BASE', plugin_basename( __FILE__ ) );
 }
